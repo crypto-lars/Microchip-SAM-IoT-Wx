@@ -63,8 +63,8 @@ uint8_t g_serial_number[ATCA_SERIAL_NUM_SIZE];
 ATCAIfaceCfg cfg_ateccx08a_i2c_custom = {
     .iface_type            = ATCA_I2C_IFACE,
     .devtype               = ATECC608A,
-    .atcai2c.slave_address = 0xB0,
-    .atcai2c.bus           = 2,
+    .atcai2c.slave_address = 0x6C,
+    .atcai2c.bus           = 0,
     .atcai2c.baud          = 100000,
     .wake_delay            = 1500,
     .rx_retries            = 20};

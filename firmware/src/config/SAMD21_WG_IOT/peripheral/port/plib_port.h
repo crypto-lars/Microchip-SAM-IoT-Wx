@@ -170,13 +170,13 @@
 #define I2C_SERCOM3_PAD1_PIN                  PORT_PIN_PA23
 
 /*** Macros for LED_ERR_GPIO_PA25 pin ***/
-#define LED_ERR_GPIO_PA25_Set()               (PORT_REGS->GROUP[0].PORT_OUTSET = 1 << 25)
-#define LED_ERR_GPIO_PA25_Clear()             (PORT_REGS->GROUP[0].PORT_OUTCLR = 1 << 25)
-#define LED_ERR_GPIO_PA25_Toggle()            (PORT_REGS->GROUP[0].PORT_OUTTGL = 1 << 25)
-#define LED_ERR_GPIO_PA25_OutputEnable()      (PORT_REGS->GROUP[0].PORT_DIRSET = 1 << 25)
-#define LED_ERR_GPIO_PA25_InputEnable()       (PORT_REGS->GROUP[0].PORT_DIRCLR = 1 << 25)
-#define LED_ERR_GPIO_PA25_Get()               (((PORT_REGS->GROUP[0].PORT_IN >> 25)) & 0x01)
-#define LED_ERR_GPIO_PA25_PIN                  PORT_PIN_PA25
+#define LED_ERR_GPIO_PA10_Set()               (PORT_REGS->GROUP[0].PORT_OUTSET = 1 << 10)
+#define LED_ERR_GPIO_PA10_Clear()             (PORT_REGS->GROUP[0].PORT_OUTCLR = 1 << 10)
+#define LED_ERR_GPIO_PA10_Toggle()            (PORT_REGS->GROUP[0].PORT_OUTTGL = 1 << 10)
+#define LED_ERR_GPIO_PA10_OutputEnable()      (PORT_REGS->GROUP[0].PORT_DIRSET = 1 << 10)
+#define LED_ERR_GPIO_PA10_InputEnable()       (PORT_REGS->GROUP[0].PORT_DIRCLR = 1 << 10)
+#define LED_ERR_GPIO_PA10_Get()               (((PORT_REGS->GROUP[0].PORT_IN >> 10)) & 0x01)
+#define LED_ERR_GPIO_PA10_PIN                  PORT_PIN_PA10
 
 /*** Macros for TS_EIC_EXTINT15 pin ***/
 #define TS_EIC_EXTINT15_Get()               (((PORT_REGS->GROUP[0].PORT_IN >> 27)) & 0x01)
